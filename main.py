@@ -12,7 +12,7 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 MORSE_CODE_DICT = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
     'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
-    'M': '--', 'n': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
+    'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
     'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
     'Y': '-.--', 'Z': '--..', '1': '.----', '2': '..---', '3': '...--',
     '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..',
@@ -76,4 +76,5 @@ async def read_index():
     if not os.path.exists(index_path):
         return {"error": f"File not found at {index_path}. Please ensure the 'static' folder exists."}
         
+
     return FileResponse(index_path)
